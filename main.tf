@@ -3,7 +3,7 @@ provider "google" {
   region  = var.region
 }
 
-resource "google_cloud_scheduler_job" "slack-notify-scheduler" {
+resource "google_cloud_scheduler_job" "slack_notify_scheduler" {
   name      = "slack-notify-daily"
   project   = var.project
   schedule  = "0 12 * * *"
